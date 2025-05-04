@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>サプーのホームページ</title>
     <link rel="stylesheet" href="css/base.css">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 </head>
+
 <body>
     <header>
         <img src="images/logo.png" alt="logo" id="top-logo">
@@ -14,7 +21,34 @@
     <main class="container mt-4 main-container">
         <div class="row align-items-center">
             <div class="col-md-6 p-4 standing-supu-content">
-                <img src="images/supu-image-1.png" alt="supu-image-1" class="supu-standing-image">
+                <div id="supuCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#supuCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#supuCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/supu-image-1.png" class="d-block w-100 supu-standing-image"
+                                alt="supu-image-1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/supu-image-2.png" class="d-block w-100 supu-standing-image"
+                                alt="supu-image-2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#supuCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#supuCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
             <div class="col-md-6 p-4 pe-md-5 profile-content">
                 <h2>サプー</h2>
@@ -26,6 +60,8 @@
                 <p>
                     書籍「VTuberサプーが教える！ Python 初心者のコード／プロのコード」を執筆。
                 </p>
+                <video width="100%" src="movies/pr-movie.mov" autoplay loop muted playsinline type="video/quicktime">
+                </video>
             </div>
         </div>
     </main>
@@ -34,4 +70,5 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
