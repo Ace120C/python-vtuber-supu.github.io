@@ -78,7 +78,7 @@ main {
 }
 
 #supuCarousel {
-    max-width: 33%;
+    max-width: 70%;
     /* 例: コンテナの80%の幅にする */
     margin: 0 auto;
     /* コンテナ内で中央揃え */
@@ -86,12 +86,12 @@ main {
 
 /* カルーセルのコントロールボタンの位置調整 */
 #supuCarousel .carousel-control-prev {
-    left: -90px;
+    left: -10px;
     /* 左に移動させる距離 (調整可能) */
 }
 
 #supuCarousel .carousel-control-next {
-    right: -90px;
+    right: -10px;
     /* 右に移動させる距離 (調整可能) */
 }
 
@@ -109,27 +109,62 @@ main {
     transition: none !important;
 }
 
-/* 画像をすべて同じ高さで表示しつつ、はみ出し部分を中央で切り抜く */
-.carousel-item {
-    height: 550px;
-    /* お好みの高さに調整 */
-}
-
-.supu-standing-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    /* contain にすると縦横比を崩さず枠内表示（余白あり）になります */
-    object-position: center;
-}
-
 .section-title {
     font-size: 3rem;
+    margin-top: 5rem !important;
+    /* 上部余白を拡大 */
 }
 
 .link-btn {
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: 1rem 2rem;
+}
+
+.book-content {
+    background-color: white;
+    padding: 1rem;
+    font-size: 1.7rem;
+}
+
+/* 吹き出し */
+.balloon2-top {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0;
+    padding: 0.7rem 1rem;
+    min-width: 12rem;
+    max-width: 100%;
+    font-size: 1.7rem;
+    background: #FFF;
+    border: solid 0.3rem #171864c2;
+    box-sizing: border-box;
+}
+
+.balloon2-top:before {
+    content: "";
+    position: absolute;
+    top: -2.4rem;
+    left: 50%;
+    margin-left: -1.5rem;
+    border: 1.2rem solid transparent;
+    border-bottom: 1.2rem solid #FFF;
+    z-index: 2;
+}
+
+.balloon2-top:after {
+    content: "";
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    margin-left: -1.7rem;
+    border: 1.4rem solid transparent;
+    border-bottom: 1.4rem solid #171864c2;
+    z-index: 1;
+}
+
+.balloon2-top p {
+    margin: 0;
+    padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -139,4 +174,10 @@ main {
         margin: 0 auto;
         /* 中央寄せにしたい場合 */
     }
+}
+
+/* SNSアイコンのサイズ設定 */
+.sns-icon {
+    height: 2.5rem;
+    width: auto;
 }

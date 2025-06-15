@@ -21,7 +21,8 @@
     <main class="container mt-4 main-container">
         <div class="row align-items-center">
             <div class="col-md-6 p-4 standing-supu-content">
-                <div id="supuCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div id="supuCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                    data-bs-interval="3000">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#supuCarousel" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -57,7 +58,7 @@
                 </div>
             </div>
             <div class="col-md-6 p-4 pe-md-5 profile-content">
-                <h2>サプー</h2>
+                <h2 class="fw-bold">サプー</h2>
                 <p>
                     2021年1月27日より活動開始。
                     主にPythonに関するプログラミング情報を発信。
@@ -68,39 +69,79 @@
                 </p>
                 <video width="100%" src="movies/pr-movie.mov" autoplay loop muted playsinline type="video/quicktime">
                 </video>
+                <!-- YouTubeチャンネルリンクアイコン -->
+                <div class="text-center mt-4">
+                    <a href="https://www.youtube.com/@pythonvtuber9917" target="_blank" rel="noopener"
+                        class="d-block d-md-inline-block mb-4 mb-md-0 text-decoration-none text-body text-reset">
+                        <img src="images/youtube_social_icon_red.png" alt="YouTube" class="sns-icon">
+                        @pythonvtuber9917
+                    </a>
+                    <a href="https://x.com/PythonSuppl" target="_blank" rel="noopener"
+                        class="d-block d-md-inline-block text-decoration-none text-body text-reset ms-md-3">
+                        <img src="images/x-logo-black.png" alt="X" class="sns-icon">
+                        @PythonSuppl
+                    </a>
+                </div>
             </div>
         </div>
         <h2 class="my-5 text-center fw-bold section-title">おすすめの動画</h2>
         <!-- サムネイル画像3つを横並びで表示 -->
         <div class="row mt-4 text-center">
-            <div class="col-4">
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
                 <a href="https://youtu.be/tCMl1AWfhQQ" target="_blank" rel="noopener">
                     <img src="images/サムネ1.png" class="img-fluid" alt="サムネ1">
                 </a>
+                <div class="balloon2-top">
+                    <p>2時間半でPythonを一から学べるよ！<br>初心者はまずこの動画を見てね！</p>
+                </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
                 <a href="https://youtu.be/v5lpFzSwKbc" target="_blank" rel="noopener">
                     <img src="images/サムネ2.png" class="img-fluid" alt="サムネ2">
                 </a>
+                <div class="balloon2-top">
+                    <p>問題を解きながら基本的なコードの<br>書き方を習得しよう！</p>
+                </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
                 <a href="https://youtu.be/A6Dx8xXUcaA" target="_blank" rel="noopener">
                     <img src="images/サムネ3.png" class="img-fluid" alt="サムネ3">
                 </a>
+                <div class="balloon2-top">
+                    <p>VSCodeでAIを使う方法を解説！<br>AIを上手に使おう！
+                    </p>
+                </div>
             </div>
         </div>
         <!-- 書籍紹介 -->
-        <h2 class="my-5 text-center fw-bold section-title">執筆した書籍</h2>
-        <div class="row my-5 align-items-center">
+        <h2 class="text-center fw-bold section-title">執筆した書籍</h2>
+        <div class="row align-items-center">
             <div class="col-md-6 text-center">
                 <img src="images/book.jpg" class="img-fluid w-50" alt="書籍: VTuberサプーが教える！ Python 初心者のコード／プロのコード">
             </div>
             <div class="col-md-6">
-                <h3 class="fw-bold">VTuberサプーが教える！ Python 初心者のコード／プロのコード</h3>
-                <p>コードの見た目の整えかたから、読みやすさ、シンプルさ、安全性……などを意識した「プロ」の知識とテクニックをまとめました。中の人のエンジニア経験から得た知見をもとに解説しているので、実際に現場でちゃんと役立つコードに改善できます。この1冊で、自分の書くコードをワンランクアップさせましょう！
+                <h2 class="fw-bold my-5">VTuberサプーが教える！ Python 初心者のコード／プロのコード</h2>
+                <p class="my-4 book-content">
+                    コードの見た目の整えかたから、読みやすさ、シンプルさ、安全性……などを意識した「プロ」の知識とテクニックをまとめました。中の人のエンジニア経験から得た知見をもとに解説しているので、実際に現場でちゃんと役立つコードに改善できます。この1冊で、自分の書くコードをワンランクアップさせましょう！
                 </p>
-                <a href="https://www.amazon.co.jp/dp/4297142856" class="btn btn-lg link-btn btn-light" target="_blank"
-                    rel="noopener">Amazon</a>
+                <dl class="row mt-3">
+                    <dt class="col-4">発売日</dt>
+                    <dd class="col-8">2024年07月27日</dd>
+                    <dt class="col-4">著者</dt>
+                    <dd class="col-8">サプー</dd>
+                    <dt class="col-4">出版社</dt>
+                    <dd class="col-8">技術評論社</dd>
+                    <dt class="col-4">ISBN</dt>
+                    <dd class="col-8">9784297142858</dd>
+                </dl>
+                <div class="mt-4">
+                    <a href="https://www.amazon.co.jp/dp/4297142856" class="btn btn-lg link-btn btn-light"
+                        target="_blank" rel="noopener">Amazon</a>
+                    <a href="https://direct.gihyo.jp/view/item/000000003448" class="btn btn-lg link-btn btn-light"
+                        target="_blank" rel="noopener">Gihyo Direct</a>
+                    <a href="https://books.rakuten.co.jp/rb/17880195/" class="btn btn-lg link-btn btn-light"
+                        target="_blank" rel="noopener">楽天</a>
+                </div>
             </div>
         </div>
     </main>
