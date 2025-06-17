@@ -50,7 +50,7 @@ main {
 .profile-content {
     background-color: white;
     padding: 1rem;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
 
 .profile-content h2 {
@@ -116,14 +116,14 @@ main {
 }
 
 .link-btn {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     padding: 1rem 2rem;
 }
 
 .book-content {
     background-color: white;
     padding: 1rem;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
 
 /* 吹き出し */
@@ -134,7 +134,7 @@ main {
     padding: 0.7rem 1rem;
     min-width: 12rem;
     max-width: 100%;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     background: #FFF;
     border: solid 0.3rem #171864c2;
     box-sizing: border-box;
@@ -166,6 +166,12 @@ main {
     margin: 0;
     padding: 0;
 }
+
+#loadmap {
+    width: 100%;
+    height: 400px;
+}
+
 
 @media (min-width: 768px) {
     .main-container {
