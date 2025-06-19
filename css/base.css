@@ -7,13 +7,12 @@ body {
 
 body {
     font-family: "游ゴシック Regular", "Yu Gothic Regular", "游ゴシック体", YuGothic, sans-serif;
-    font-weight: bold;
     color: #0d0e5e;
     background-image: url('../images/background.png');
     background-repeat: repeat;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.93);
     background-blend-mode: lighten;
-    background-size: 130px;
+    background-size: 50px;
     display: flex;
     flex-direction: column;
 }
@@ -36,7 +35,6 @@ footer {
 
 main {
     padding: 1rem;
-    font-size: 1.6rem;
     flex: 1;
 }
 
@@ -50,7 +48,6 @@ main {
 .profile-content {
     background-color: white;
     padding: 1rem;
-    font-size: 1.6rem;
 }
 
 .profile-content h2 {
@@ -116,14 +113,13 @@ main {
 }
 
 .link-btn {
-    font-size: 1.6rem;
     padding: 1rem 2rem;
+    color: #0d0e5e;
 }
 
 .book-content {
     background-color: white;
     padding: 1rem;
-    font-size: 1.6rem;
 }
 
 /* 吹き出し */
@@ -134,7 +130,6 @@ main {
     padding: 0.7rem 1rem;
     min-width: 12rem;
     max-width: 100%;
-    font-size: 1.6rem;
     background: #FFF;
     border: solid 0.3rem #171864c2;
     box-sizing: border-box;
@@ -172,6 +167,16 @@ main {
     height: 400px;
 }
 
+/* 初期状態：なめらかな変化のために transition を定義 */
+.thumb-link img {
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* ホバー時：少し暗くし、同時に拡大 */
+.thumb-link:hover img {
+    transform: scale(1.05);
+    /* 5 % だけ拡大する */
+}
 
 @media (min-width: 768px) {
     .main-container {
@@ -179,6 +184,22 @@ main {
         /* 好きな数字に */
         margin: 0 auto;
         /* 中央寄せにしたい場合 */
+        font-size: 1.6rem;
+    }
+
+    .link-btn {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        font-size: 1.4rem;
+        background-size: 50px;
+    }
+
+    .link-btn {
+        font-size: 1.4rem;
     }
 }
 
