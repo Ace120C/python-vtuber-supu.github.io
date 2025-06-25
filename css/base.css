@@ -128,6 +128,14 @@ body.darkmode {
     color: #3ba8f5;
   }
 
+  .x-black {
+    display: none;
+  }
+
+  .x-white {
+    display: inline;
+  }
+
   .section-title {
     color: #3ba8f5;
   }
@@ -157,12 +165,16 @@ body.darkmode {
   }
 
   .my-5 p {
-    color: white;
+    color: #3ba8f5;
   }
 }
 
 body.lightmode {
   background-color: rgba(255, 255, 255, 0.93);
+}
+
+.x-white {
+  display: none;
 }
 
 /* Mobile version */

@@ -5,8 +5,10 @@ import (
 	"log"
 )
 
+// I made this simple Go Server to test it locally without the need for github pages
+
 func main(){
-	fs := http.FileServer(http.Dir("../python-vtuber-supu.github.io//"))
+	fs := http.FileServer(http.Dir("../python-vtuber-supu.github.io/"))
 	http.Handle("/", fs)
 
 	log.Println("Serving at Port 8080...")
